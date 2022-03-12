@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body {
+			background-color: LightSeaGreen;
+			display: flex;
+			justify-content: center;
+			padding-top: 150px;
+		}
+		.layer_1 {
+			padding: 10px;
+			font-size: 24px;
+			font-weight: bold;
+			border: solid 2px white;
+			color: white;
+			background-color: DarkCyan;
+			border-radius: 100px;
+			position: absolute;
+			z-index: 1;
+		}
+		.layer_2{
+			padding: 10px;
+			font-size: 24px;
+			font-weight: bold;
+			border: solid 2px black;
+			border-radius: 100px;
+			position: relative;
+			left: 2px;
+			top: 2px;
+			z-index: 2;
+			transition: transform 0.5s;
+		}
+		.layer_2:hover {
+			transform: translate(-2px, -2px);
+		}
+	</style>
+	<title>Тестовая страница</title>
+</head>
+<body>
+	<div class="layer_1">Тестовые буквы</div>
+	<div class="layer_2">Тестовые буквы</div>
+</body>
+</html>
